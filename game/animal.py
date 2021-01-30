@@ -1,2 +1,5 @@
 class animal:
-    pass
+    def cat():
+        pass
+    def dog():
+        pass
