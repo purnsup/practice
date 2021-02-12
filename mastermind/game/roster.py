@@ -10,7 +10,6 @@ class Roster:
         self._player2 = ''
         self.player1 = ''
         self.player2 = ''
-        pass
 
     def set_name(self):
         """
@@ -21,20 +20,15 @@ class Roster:
         self.player2 = self._player2 = input('Player 2, what is your name? ')
 
         return self.player1 and self.player2
-        pass
 
     def get_player_1(self):
         """
         This method just gets the value from player 1 and returns it.
         """
         return self.player1
-        pass
 
     def get_player_2(self):
         """
         This method gets the value from player 2 and returns it.
         """
         return self.player2
-        pass
-
-    pass
