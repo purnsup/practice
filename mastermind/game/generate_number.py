@@ -5,7 +5,7 @@ class GenerateNumber:
 
     def __init__(self):
         """
-        The constructor class.
+        The constructor method.
         """
         pass
 
