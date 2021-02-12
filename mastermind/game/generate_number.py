@@ -27,6 +27,7 @@ class GenerateNumber:
         and sends it to screen.
         """
 
+
         # generate_number = self._generate_number(self)
         # return generate_number
 
