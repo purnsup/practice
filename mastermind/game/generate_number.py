@@ -1,5 +1,4 @@
 import random
-from game.roster import Roster
 
 
 class GenerateNumber:
@@ -20,7 +19,6 @@ class GenerateNumber:
         self._number = (1000, 9999)
         self.random_number = random.choice(self._number)
         return self.random_number
-        pass
 
     def get_number(self):
         """
@@ -28,7 +26,6 @@ class GenerateNumber:
         and sends it to screen.
         """
         return self.random_number
-        pass
 
     def get_guess(self):
         """
