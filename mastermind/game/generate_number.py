@@ -50,4 +50,3 @@ class GenerateNumber:
         This method just returns the value of guess 2.
         """
         return self.guess2
-    
