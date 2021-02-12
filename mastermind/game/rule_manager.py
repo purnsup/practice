@@ -21,7 +21,7 @@ class Rule_manager:
                     if i == j:
                         self.hint[i:i+1] = 'x'
                     else:
-                        self.hint[j:j+1] = 'o'
+                        self.hint[i:i+1] = 'o'
         return self.hint
 
     def _game_over(self, number, guess):
