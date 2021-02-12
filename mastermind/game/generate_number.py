@@ -8,28 +8,26 @@ class GenerateNumber:
         """
         The constructor method.
         """
-        # self._generate_number(self) = ''
-        self.number = (0, 9999)
+        self._number = 0
         self.guess = ''
+        self.random_number = 0
 
-    def _generate_number(self):
+    def set_number(self):
         """
-        The generate_number method is an encapsulated class that simply creates
-        a random number and returns it.
+        The set_number method sets a number range and returns a random choice in
+        that range.
         """
-        self.num = random.choice(self.number)
-        return self.num
+        self._number = (1000, 9999)
+        self.random_number = random.choice(self._number)
+        return self.random_number
         pass
 
     def get_number(self):
         """
-        The get_number method calls the generate_number method's return value
+        The get_number method gets the value from set_number and returns the value
         and sends it to screen.
         """
-
-        # generate_number = self._generate_number(self)
-        # return generate_number
-
+        return self.random_number
         pass
 
     def get_guess(self):
