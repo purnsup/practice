@@ -20,14 +20,6 @@ class Rule_manager:
                 list_hint[i:i+1] = 'o'
                 if guess[i:i+1] == list_num[i]:
                     list_hint[i:i+1] = 'x'
-        # for i in range(4):
-        #     for j in range(4):
-                
-                # if guess[i:i+1] == list_num[j]:
-                #     if i == j:
-                #         list_hint[i] = 'x'
-                #     else:
-                #         list_hint[i] = 'o'
         hint = ""
         for i in list_hint:
             hint += i
@@ -55,4 +47,3 @@ class Rule_manager:
         """
         self.num_turn = (self.num_turn + 1 ) % 2
         return self.num_turn
-
