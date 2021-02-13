@@ -6,20 +6,28 @@ class Roster:
         """
         The constructor method.
         """
-        self._player1 = ''
-        self._player2 = ''
-        self.player1 = ''
-        self.player2 = ''
 
-    def set_name(self):
+        self._players = []
+        # self.player1 = ''
+        # self.player2 = ''
+
+    def get_name(self):
         """
         The get_name method simply asks the players to input their names
         and then returns that value to screen.
         """
-        self.player1 = self._player1 = input('Player 1, what is your name? ')
-        self.player2 = self._player2 = input('Player 2, what is your name? ')
+        player1 = input('Enter a name for player 1: ')
+        self._players.append(player1)
+        player2 = input('Enter a name for player 2: ')
+        self._players.append(player2)
+        print()
 
-        return self.player1 and self.player2
+        return self._players
+
+        # self.player1 = self._player1 = input('Player 1, what is your name? ')
+        # self.player2 = self._player2 = input('Player 2, what is your name? ')
+
+        # return self.player1 and self.player2
 
     def get_player_1(self):
         """
