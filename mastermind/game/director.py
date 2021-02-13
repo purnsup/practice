@@ -22,7 +22,8 @@ class Director:
             self._do_outputs()
 
     def _prepare_game(self):
-        self.number = self._generate_number.set_number()
+        # self.number = self._generate_number.set_number()
+        self.number = "6888"
         print(self.number)
         self.players = self._roster.get_name()
         self.hints = ["****", "****"]
